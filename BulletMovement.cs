@@ -45,7 +45,7 @@ public class BulletMovement : MonoBehaviour
         {
             Debug.Log("Belle has been shot");
             collision.gameObject.GetComponent<BelleShotDead>()?.animator.SetTrigger("Shot");
-             collision.gameObject.GetComponent<BelleShotDead>().SetDead();
+            collision.gameObject.GetComponent<BelleShotDead>().SetDead();
         }
         
         Destroy(gameObject);
